@@ -14,7 +14,7 @@ public class ArregloEjemplo {
             num[i] = scanner.nextInt();
         }
         int suma = 0;
-        for(int i=0;i<n:i++){
+        for(int i=0;i<n;i++){
             suma += num[i];
         }
         double promedio = (double)suma/n;
