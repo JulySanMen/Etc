@@ -10,6 +10,8 @@ public class areas{
         System.out.println("1. Círculo");
         System.out.println("2. Cuadrado");
         System.out.println("3. Rectángulo");
+        System.out.println("4. Triangulo");
+        System.out.println("5. Triángulo Isósceles")
         System.out.print("otro: ");
         opcion = scanner.nextInt();
 
@@ -39,6 +41,30 @@ public class areas{
                 double areaRectangulo = base * altura;
                 System.out.println("El área del rectángulo es: " + areaRectangulo);
                 break;
+            
+            case 4:
+                // Área de un Triángulo: A = (base * altura) / 2
+                System.out.print("Ingresa la base del triángulo: ");
+                double baseTri = scanner.nextDouble();
+                System.out.print("Ingresa la altura del triángulo: ");
+                double alturaTri = scanner.nextDouble();
+                double areaTriangulo = (baseTri * alturaTri) / 2;
+                System.out.println("El área del triángulo es: " + areaTriangulo);
+                break;
+
+            case 5:
+                // Área de un Triángulo Isósceles
+                System.out.print("Ingresa la base del triángulo isósceles: ");
+                double baseIso = scanner.nextDouble();
+                System.out.print("Ingresa la longitud de los lados iguales del triángulo: ");
+                double ladoIso = scanner.nextDouble();
+                
+                // Calcular la altura usando Pitágoras
+                double alturaIso = Math.sqrt(Math.pow(ladoIso, 2) - Math.pow(baseIso / 2, 2));
+                double areaIsosceles = (baseIso * alturaIso) / 2;
+                System.out.println("El área del triángulo isósceles es: " + areaIsosceles);
+                break;
+            
 
             default:
                 System.out.println("Opción no válida. Por favor, selecciona una opción del 1 al 3.");
