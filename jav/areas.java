@@ -10,8 +10,9 @@ public class areas{
         System.out.println("1. Círculo");
         System.out.println("2. Cuadrado");
         System.out.println("3. Rectángulo");
-        System.out.println("4. Triangulo");
+        System.out.println("4. Triang Triángulo Isóscelesulo");
         System.out.println("5. Triángulo Isósceles")
+        System.out.println("6. Triángulo Equilátero")
         System.out.print("otro: ");
         opcion = scanner.nextInt();
 
@@ -63,6 +64,14 @@ public class areas{
                 double alturaIso = Math.sqrt(Math.pow(ladoIso, 2) - Math.pow(baseIso / 2, 2));
                 double areaIsosceles = (baseIso * alturaIso) / 2;
                 System.out.println("El área del triángulo isósceles es: " + areaIsosceles);
+                break;
+            
+            case 6:
+                // Área de un Triángulo Equilátero: A = (sqrt(3) / 4) * l^2
+                System.out.print("Ingresa la longitud de un lado del triángulo equilátero: ");
+                double ladoEquilatero = scanner.nextDouble();
+                double areaEquilatero = (Math.sqrt(3) / 4) * Math.pow(ladoEquilatero, 2);
+                System.out.println("El área del triángulo equilátero es: " + areaEquilatero);
                 break;
             
 
