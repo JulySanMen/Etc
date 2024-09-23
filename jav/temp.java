@@ -21,6 +21,5 @@ public class temp{
         System.out.println(Rankine + " grados Rankine");
         System.out.println(Reaumur + " grados Reaumur");
 
-
     }
 }
