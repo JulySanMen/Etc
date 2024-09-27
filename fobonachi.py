@@ -6,7 +6,7 @@ def fibonacci(n):
         a, b = b, a + b
     return secuencia
 
-n = int(input("Ingresa numero para ver su serie : "))
+n = int(input("Ingresa numero para ver su serie bibonacci : "))
 
 
 print(fibonacci(n))
