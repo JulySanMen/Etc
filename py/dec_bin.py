@@ -1,14 +1,18 @@
-def conversion(n):
-    binario = ""
-    while n > 0:
-        residuo = n % 2
+def conversion(decimal):
+    binario=""
+    while decimal > 0:
+        residuo = decimal % 2
         binario = str(residuo) + binario
-        n = n // 2
+        decimal = decimal // 2
     return binario
+decimal= int(input ("Introduce un numero en decimal: "))
+binario=conversion(decimal)
+print(f"El número {decimal} en binario es: {binario}")
+
 
 # Ejemplo
-numero_decimal = 25
-binario = conversion(numero_decimal)
-print(f"El número {numero_decimal} en binario es: {binario}")
+#numero_decimal = 25
+#binario = conversion(numero_decimal)
+
 
 
