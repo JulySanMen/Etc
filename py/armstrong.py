@@ -3,7 +3,7 @@
 #Por ejemplo, el número 153 es un número de Armstrong, ya que: 1^3+5^3+3^3 = 153
 
 
-def es_numero_armstrong(numero):
+def num_armstrong(numero):
     # Convertimos el número a una cadena para contar los dígitos
     digitos = str(numero)
     n = len(digitos) 
@@ -14,8 +14,9 @@ def es_numero_armstrong(numero):
     # Verificamos si la suma es igual al número original
     return suma == numero
 
-numero = 153
-if es_numero_armstrong(numero):
+numero = int(input("Ingresa un número: "))
+
+if num_armstrong(numero):
     print(f"{numero} es un número de Armstrong.")
 else:
     print(f"{numero} no es un número de Armstrong.")
