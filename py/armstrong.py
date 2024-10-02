@@ -2,7 +2,6 @@
 #elevados a la potencia del número de dígitos. 
 #Por ejemplo, el número 153 es un número de Armstrong, ya que: 1^3+5^3+3^3 = 153
 
-
 def num_armstrong(numero):
     # Convertimos el número a una cadena para contar los dígitos
     digitos = str(numero)
