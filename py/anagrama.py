@@ -1,4 +1,4 @@
-def son_anagramas(palabra1, palabra2):
+def anagramas(palabra1, palabra2):
     if palabra1 == palabra2:
         return False
     
@@ -7,6 +7,6 @@ def son_anagramas(palabra1, palabra2):
 
     return sorted(palabra1) == sorted(palabra2)
 
-print(son_anagramas("amor", "roma")) 
-print(son_anagramas("amor", "amora")) 
-print(son_anagramas("amor", "amor"))  
+print(anagramas("amor", "roma")) 
+print(anagramas("amor", "amora")) 
+print(anagramas("amor", "amor"))  
